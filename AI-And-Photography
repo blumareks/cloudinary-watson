@@ -20,7 +20,9 @@ Our API's and upload widget supports, YouTube, Facebook, Google Image Search, In
 https://cloudinary.com/blog/generating_video_thumbnails_from_youtube_and_other_video_sites
 
 Use multiple AI services to complement your image tagging.
-Out of the box, Cloudinary supports image tagging, facial recognition, color detection, meta-data and adds support from multiple vendors, and with our APIS,  you can bolt on any AI service.    A simple server-less endpoint can pull it all together.
+Out of the box, Cloudinary supports image tagging, facial recognition, color detection, meta-data and adds support from multiple vendors, and with our APIS,  you can bolt on any AI service.    
+A simple server-less endpoint can pull it all together.
+https://raw.githubusercontent.com/blumareks/cloudinary-watson/master/Grumpy_Old_Men__esszfg.json
 
 
 
