@@ -1,0 +1,73 @@
+{
+   "ibm": {
+      "custom_classes": 0,
+      "images": [
+         {
+            "classifiers": [
+               {
+                  "classes": [
+                     {
+                        "class": "duck hunting",
+                        "score": 0.5,
+                        "type_hierarchy": "/sport/outdoor sport/hunt/duck hunting"
+                     },
+                     {
+                        "class": "hunt",
+                        "score": 0.625
+                     },
+                     {
+                        "class": "outdoor sport",
+                        "score": 0.625
+                     },
+                     {
+                        "class": "sport",
+                        "score": 0.625
+                     },
+                     {
+                        "class": "person in headdress",
+                        "score": 0.849,
+                        "type_hierarchy": "/person/person in headdress"
+                     },
+                     {
+                        "class": "person",
+                        "score": 0.85
+                     },
+                     {
+                        "class": "maroon color",
+                        "score": 0.99
+                     }
+                  ],
+                  "classifier_id": "default",
+                  "name": "default"
+               }
+            ],
+            "resolved_url": "http://res.cloudinary.com/de-demo/image/upload/v1505182273/watson-assets/playground/men/Grumpy_Old_Men__esszfg",
+            "source_url": "http://res.cloudinary.com/de-demo/image/upload/v1505182273/watson-assets/playground/men/Grumpy_Old_Men__esszfg"
+         }
+      ],
+      "images_processed": 1
+   },
+   "cloudinary": {
+      "public_id": "watson-assets/playground/men/Grumpy_Old_Men__esszfg",
+      "version": 1505964337,
+      "signature": "fa168065084fbb10a5bd3fde25ffae8cf4624876",
+      "width": 204,
+      "height": 320,
+      "format": "jpg",
+      "resource_type": "image",
+      "created_at": "2017-09-21T03:25:37Z",
+      "tags": [
+         "hunt",
+         "outdoor sport",
+         "sport",
+         "person in headdress",
+         "person",
+         "maroon color"
+      ],
+      "bytes": 19963,
+      "type": "upload",
+      "url": "http://res.cloudinary.com/de-demo/image/upload/v1505964337/watson-assets/playground/men/Grumpy_Old_Men__esszfg.jpg",
+      "secure_url": "https://res.cloudinary.com/de-demo/image/upload/v1505964337/watson-assets/playground/men/Grumpy_Old_Men__esszfg.jpg",
+      "access_mode": "public"
+   }
+}
