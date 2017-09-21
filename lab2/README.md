@@ -47,35 +47,33 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-TextView textView;
-Button button;
-ImageView loadedImage;
-File image;
+    TextView textView;
+    Button button;
+    ImageView loadedImage;
+    File image;
 
-//watson developer cloud java & android helpers
-
-
-@Override
-protected void onCreate(Bundle savedInstanceState) {
-super.onCreate(savedInstanceState);
-setContentView(R.layout.activity_main);
-
-textView = (TextView) findViewById(R.id.textView);
-button = (Button) findViewById(R.id.button);
-loadedImage = (ImageView) findViewById(R.id.loaded_image);
+    //watson developer cloud java & android helpers
 
 
-//fire action when button is pressed
-button.setOnClickListener(new View.OnClickListener() {
-@Override
-public void onClick(View v) {
-System.out.println("Logging to the console that the button pressed");
-System.out.println("Logging camera helper");
-cameraHelper.dispatchTakePictureIntent();
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+
+    textView = (TextView) findViewById(R.id.textView);
+    button = (Button) findViewById(R.id.button);
+    loadedImage = (ImageView) findViewById(R.id.loaded_image);
 
 
-}
-});
+    //fire action when button is pressed
+    button.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            System.out.println("Logging to the console that the button pressed");
+            System.out.println("Logging camera helper");
+            cameraHelper.dispatchTakePictureIntent();
+        }
+    });
 }
 
 
@@ -88,40 +86,39 @@ cameraHelper.dispatchTakePictureIntent();
 */
 @Override
 public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
-switch (requestCode) {
-case CameraHelper.REQUEST_PERMISSION: {
-// permission granted
-if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-cameraHelper.dispatchTakePictureIntent();
-}
-}
+    switch (requestCode) {
+        case CameraHelper.REQUEST_PERMISSION: {
+        // permission granted
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                cameraHelper.dispatchTakePictureIntent();
+            }
+        }
 
-default: Toast.makeText(this, "yay!", Toast.LENGTH_SHORT).show();
-}
+        default: Toast.makeText(this, "yay!", Toast.LENGTH_SHORT).show();
+    }
 }
 
 private class WatsonTask extends AsyncTask<Integer, Void, String> {
-@Override protected String doInBackground(Integer... integers) {
+    @Override protected String doInBackground(Integer... integers) {
 
-String ttsResponse = "This is Watson-Cloudinary Smart Selfie. Your picture looks great.";
+        String ttsResponse = "This is Watson-Cloudinary Smart Selfie. Your picture looks great.";
+
+    }
 
 
+
+    //invoke text to speech service
+    System.out.println("Logging invoking Watson TTS");
+    System.out.println(ttsResponse);
+
+    return "Did visual";
 }
 
-
-
-//invoke text to speech service
-System.out.println("Logging invoking Watson TTS");
-System.out.println(ttsResponse);
-
-return "Did visual";
-}
-
-//setting the value of UI outside of the thread
-@Override
-protected void onPostExecute(String result) {
-textView.setText("The message is: " + result);
-}
+    //setting the value of UI outside of the thread
+    @Override
+    protected void onPostExecute(String result) {
+        textView.setText("The message is: " + result);
+    }
 }
 
 
