@@ -19,4 +19,4 @@ smart photography - Watson advising on taking a greater picture thru smart recom
 
 Delivered to you by Cloudinary and IBM 
 
-Subscribe to our Twitter: @Dan and @blumareks
+Subscribe to our Twitter: @filmfestnow and @blumareks
