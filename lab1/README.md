@@ -60,8 +60,18 @@ Please update BMSCredentials.plist
 </plist>
 ```
 
+In order to run the application the ```info.plist``` needs to have: 
+```xml
+<key>NSCameraUsageDescription</key>
+<string>This application uses the camera to allow Watson to analyze photos using Visual Recognition</string>
+<key>NSPhotoLibraryUsageDescription</key>
+<string>This application uses photos in the Photo Library to allow Watson to analyze them using Visual Recognition</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>This application uses the microphone to allow for the Watson speech to text commands</string>
+```
 
-The code looks like this:
+
+The entire code of the ```ViewController.swift``` looks like this:
 ```swift
 import UIKit
 import SwiftSpinner
