@@ -467,16 +467,7 @@ class ViewController: JSQMessagesViewController {
                         let attachment = Attachment(fallback: "Hello World", title: "Welcome to SlackKit", callbackID: "hello_world", actions: [helloAction])
                         bot.webAPI?.sendMessage(channel: "C6VHKLV8C", text: slackText, attachments: [], success: nil, failure: nil)
                         
-                        self.didPressSend(nil, withMessageText: "I got pictures from 1 to " + endIndex, senderId: "watson", senderDisplayName: "watson", date: Date())
-                        
-                         //let message = JSQMessage(senderId: self.senderId, displayName: self.senderDisplayName, text: "I got pictures from 1 to " + endIndex) //watsonMessage)
-                         
-                         // Add message to conversation message array
-                         //self.conversationMessages.append(message!)
-                           // DispatchQueue.main.async {
-                             //   self.finishSendingMessage()
-                         //}
-                        
+                        self.didPressSend(nil, withMessageText: "I got pictures from 1 to " + endIndex, senderId: "watson", senderDisplayName: "watson", date: Date())     
                     }
                     
                     
