@@ -24,5 +24,7 @@ Subscribe to our Twitter: @filmfestnow and @blumareks
 ## Upload Widget Example
 https://codepen.io/dzeitman/pen/EwgjJV/
 
+https://codepen.io/dzeitman/live/EwgjJV?p=watson-images&k=AIzaSyCUl1lrBXky7YphXyEc162OzEwGGmG5pJY
+
 ## Rules to live by
 http://www.techradar.com/how-to/photography-video-capture/cameras/10-rules-of-photo-composition-and-why-they-work-1320770#
