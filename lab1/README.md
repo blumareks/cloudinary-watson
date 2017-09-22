@@ -24,7 +24,7 @@ In order to start you would need the following:
 
 Here comes the steps to create Content Assistant iOS app:
 
-1. Create an iOS application in Swift using the Bluemix Mobile Project (left menu - look for Mobile - choose Chatbot Project)
+1. [Create an iOS application in Swift using the Bluemix Mobile Project (left menu - look for Mobile - choose Chatbot Project)](https://console.bluemix.net/developer/create-project/?pattern=MOBILE&starter=Watson%20Conversation)
 2. Add the Watson SDK: [Watson-Developer-Cloud SDK for Swift](https://github.com/watson-developer-cloud/swift-sdk#installation)
 3. Instantiate the Bluemix Watson services and get the keys/a token to them
 4. Add some code in your iOS app to invoke the cognitive services
