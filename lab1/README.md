@@ -32,6 +32,35 @@ Here comes the steps to create Content Assistant iOS app:
 
 Alternatively you could use TJ Bot Raspberry Pi robot (you would need a mic, a speaker without the XCode and iOS IDE). Look here for inspiration on how to achieve that with JeanCarl Bisson's' [node-red labs](https://github.com/jeancarl/node-red-labs)
 
+Please update BMSCredentials.plist
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>conversationWorkspaceID</key>
+	<string></string>
+	<key>sttUsername</key>
+	<string></string>
+	<key>sttPassword</key>
+	<string></string>
+	<key>ttsPassword</key>
+	<string></string>
+	<key>ttsUsername</key>
+	<string></string>
+	<key>conversationUsername</key>
+	<string></string>
+	<key>conversationPassword</key>
+	<string></string>
+	<key>conversationUrl</key>
+	<string>https://gateway.watsonplatform.net/conversation/api</string>
+	<key>appName</key>
+	<string>name of your app</string>
+</dict>
+</plist>
+```
+
+
 The code looks like this:
 ```swift
 import UIKit
