@@ -21,6 +21,10 @@ Delivered to you by Cloudinary and IBM
 
 Subscribe to our Twitter: @filmfestnow and @blumareks
 
+## Slides
+https://www.slideshare.net/DanZeitman/become-a-photo-pro-with-ai-and-deep-learning
+Note: You can dive deeper into each slide's topic by following the source links in the upper right corner.
+
 ## Upload Widget Example
 https://codepen.io/dzeitman/pen/EwgjJV/
 
